@@ -6,6 +6,8 @@ public class LanternFlicker : MonoBehaviour
     public Light mySpotLight;
     private bool turnOffOnExit = true;
 
+    //private AudioSource lightFlicker;
+
    
     void Start()
     {
@@ -13,6 +15,8 @@ public class LanternFlicker : MonoBehaviour
         {
             mySpotLight.enabled = false;
         }
+
+        //audio = GetComponent<AudioSource>();
     }
 
 
