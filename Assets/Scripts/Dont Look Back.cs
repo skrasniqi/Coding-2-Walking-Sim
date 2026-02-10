@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DontLookBack : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class DontLookBack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(transform.localEulerAngles.y < -165 || transform.localEulerAngles.y > 165)
+        {
+            
+            SceneManager.LoadScene("Mourning Fields");
+        }
     }
 }
