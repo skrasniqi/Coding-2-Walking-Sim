@@ -32,13 +32,14 @@ public class AudioController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            audio.Play();
             weights[0] = 1;
             weights[1] = 0;
             mixer.TransitionToSnapshots(snapshots, weights, fadeTimeInSeconds);
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    /*private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
@@ -48,5 +49,5 @@ public class AudioController : MonoBehaviour
             weights[0] = 0;
             mixer.TransitionToSnapshots(snapshots, weights, fadeTimeInSeconds);
         }
-    }
+    }*/
 }
