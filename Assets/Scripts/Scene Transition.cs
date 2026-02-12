@@ -31,6 +31,10 @@ public class SceneTransition : MonoBehaviour
             {
                 SceneManager.LoadScene(2);
             }
+            else if (currentScene == 2)
+            {
+                SceneManager.LoadScene(0);
+            }
 
 
 
